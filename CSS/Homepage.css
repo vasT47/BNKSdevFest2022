@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1{
+    font-size: 4rem;
+}
+
+
+
+section p{
+    font-size: 1.5rem;
+}
+
+
+
+
+section#home{
+    background-image: url(../Media/S1\ Back.jpg);
+    background-position: center;
+}
+
+section#about{
+    background-color: #5f7161;
+}
+
+section#service{
+    background-color: #efead8;
+}
+
+section#contact{
+    background-color: #ffe5b4;
+}
+
+.container img{
+    height:200px;
+}
+
+button#GetStarted-btn{
+    height: 30px;
+    width: 100px;
+    border-color: black;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+button#GetStarted-btn:hover{
+    cursor: pointer;
+    border-color: black;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.review{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.row{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #d0c9c0;
+    padding: 25px;
+    display: flex;
+}
+
+.row img{
+    height: 70px;
+    margin: 5px 30px;
+    border-radius: 40%;
+
+}
+
+.users-col{
+    padding: 0px 5%;
+}
+
+.service{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.row-2{
+    flex-basis: 33%;
+    border-radius:10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #d0c9c0;
+    padding: 25px;
+    display: flex;
+}
+
+.row-2 p{
+    padding: 0px 30px;
+}
+
+.row-2 ul li{
+    list-style: none;
+    display: inline-block;;
+}
+
+.row-2 ul li img{
+    height: 30px;
+    padding: 0px 5px;
+    padding-left: 40px;
+}
+
+.form ul li{
+    list-style: none;
+    text-align: left;
+}
+
+
+
+.form ul li label{
+    padding-right: 100px;
+    font-size: 2rem;
+}
+
+
+.form button{
+    height: 30px;
+    width: 100px;
+    color:white;
+    border-color: black;
+    background-color: black;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.form button:hover{
+    cursor: pointer;
+    border-color: black;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+section#GetStarted{
+    color: white;
+}
+
+.container a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+* a{
+    text-decoration: none;
+    color: black;
+}
